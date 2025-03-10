@@ -30,7 +30,7 @@
     color: #333;
   }
 
-  .like-button {
+  /* .like-button {
     border: none;
     padding: 8px 12px;
     font-size: 14px;
@@ -47,7 +47,7 @@
   .like-button:not(.liked) {
     background-color: gray;
     color: white;
-  }
+  } */
   .app {
     display: flex;
     flex-direction: column;
