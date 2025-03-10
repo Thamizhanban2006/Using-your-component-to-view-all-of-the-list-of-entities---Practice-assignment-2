@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Postcard from './components/postcard'
+
+
 
 function App() {
 
@@ -30,10 +33,12 @@ function App() {
   ];
 
   return (
-    <>
-      
-    </>
-  )
+    <div className="app">
+      {initialPosts.map((post) => (
+        <Postcard key={post.id} {...post} />
+      ))}
+    </div>
+  );
 }
 
 export default App
